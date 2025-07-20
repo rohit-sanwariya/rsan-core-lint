@@ -1,0 +1,16 @@
+{
+  "name": "prettier-config",
+  "version": "1.0.0",
+  "description": "Shared Prettier configuration for Core Lint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "lint",
+    "prettier",
+    "configuration"
+  ],
+  "author": "",
+  "license": "MIT"
+}

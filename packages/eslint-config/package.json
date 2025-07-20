@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint configuration for JavaScript and TypeScript projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "publish": "npm publish"
+  },
+  "keywords": [
+    "eslint",
+    "lint",
+    "configuration"
+  ],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "stylelint-config",
+  "version": "1.0.0",
+  "description": "Shared Stylelint configuration for linting CSS and stylesheets.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint '**/*.css'",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "stylelint",
+    "lint",
+    "css",
+    "configuration"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "stylelint": "^14.0.0"
+  }
+}
