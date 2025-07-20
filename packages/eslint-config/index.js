@@ -1,10 +1,12 @@
 // @ts-nocheck
 /** @type {import('eslint').Linter.Config[]} */
+const tsParser = require('@typescript-eslint/parser');
+
 module.exports = [
   {
     files: ['**/*.ts'],
     languageOptions: {
-      parser: require.resolve('@typescript-eslint/parser'),
+      parser: tsParser, // Use the imported module, not require.resolve
       parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
