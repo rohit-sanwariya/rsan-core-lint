@@ -4,7 +4,7 @@ module.exports = {
         ecmaVersion: 2020,
         sourceType: 'module',
         ecmaFeatures: {
-            jsx: true,
+            jsx: false, // Angular does not use JSX
         },
     },
     env: {
@@ -16,18 +16,12 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
-        'plugin:react/recommended',
+        'plugin:@angular-eslint/recommended',
         'plugin:prettier/recommended',
     ],
     rules: {
         'no-console': 'warn',
-        'react/prop-types': 'off',
         '@typescript-eslint/no-explicit-any': 'warn',
         'prettier/prettier': 'error',
-    },
-    settings: {
-        react: {
-            version: 'detect',
-        },
     },
 };
