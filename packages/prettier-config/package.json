@@ -1,5 +1,5 @@
 {
-  "name": "prettier-config",
+  "name": "rsan-prettier-config",
   "version": "1.0.0",
   "description": "Shared Prettier configuration for Core Lint",
   "main": "index.js",
@@ -12,5 +12,6 @@
     "configuration"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "38b8399d7b3e699808cddc86a0b5d9354ffaf3c5"
 }
