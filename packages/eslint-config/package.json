@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config",
+  "name": "rsan-eslint-config",
   "version": "1.0.0",
   "description": "ESLint configuration for JavaScript and TypeScript projects",
   "main": "index.js",
