@@ -1,27 +1,34 @@
-module.exports = {
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
+// @ts-nocheck
+/** @type {import('eslint').Linter.Config[]} */
+module.exports = [
+  {
+    files: ['**/*.ts'],
+    languageOptions: {
+      parser: require.resolve('@typescript-eslint/parser'),
+      parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
-        ecmaFeatures: {
-            jsx: false, // Angular does not use JSX
-        },
+      },
     },
-    env: {
-        browser: true,
-        es2021: true,
-        node: true,
-        jest: true,
+    plugins: {
+      '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
+      '@angular-eslint': require('@angular-eslint/eslint-plugin'),
+      prettier: require('eslint-plugin-prettier'),
     },
-    extends: [
-        'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@angular-eslint/recommended',
-        'plugin:prettier/recommended',
-    ],
     rules: {
-        'no-console': 'warn',
-        '@typescript-eslint/no-explicit-any': 'warn',
-        'prettier/prettier': 'error',
+      'no-console': 'warn',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      'prettier/prettier': 'error',
     },
-};
+  },
+  {
+    files: ['**/*.html'],
+    plugins: {
+      '@angular-eslint/template': require('@angular-eslint/eslint-plugin-template'),
+    },
+    processor: '@angular-eslint/template/extract-inline-html',
+    rules: {
+      // Optional rules for Angular templates
+    },
+  },
+];
